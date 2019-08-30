@@ -1,9 +1,10 @@
 class RestaurantsController < ApplicationController
-  #before_action :set_restaurant, only: [:show, :update, :destroy]
+  before_action :set_restaurant, only: [:show, :update, :destroy]
 
   # GET /restaurants
   def index
     @restaurants = Restaurant.all
+
     render json: @restaurants
   end
 
@@ -45,6 +46,8 @@ class RestaurantsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def restaurant_params
-      params.permit(:name, :location, :phone, :res_img)
+      params.require(:name, :location, :phone, :avatar)
     end
 end
+
+

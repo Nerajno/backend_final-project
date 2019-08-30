@@ -3,7 +3,11 @@
 one:
   comment: MyString
   rating: MyString
+  restaurant: one
+  user: one
 
 two:
   comment: MyString
   rating: MyString
+  restaurant: two
+  user: two

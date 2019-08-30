@@ -4,8 +4,8 @@ class CreateRestaurants < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :location
       t.string :phone
-      t.string :res_img
-      
+      t.string :avatar
+
       t.timestamps
     end
   end

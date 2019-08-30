@@ -4,10 +4,10 @@ one:
   name: MyString
   location: MyString
   phone: MyString
-  res_img: MyString
+  avatar: MyString
 
 two:
   name: MyString
   location: MyString
   phone: MyString
-  res_img: MyString
+  avatar: MyString

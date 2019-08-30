@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_122811) do
+ActiveRecord::Schema.define(version: 2019_08_30_165152) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,33 +19,33 @@ ActiveRecord::Schema.define(version: 2019_08_29_122811) do
     t.string "name"
     t.string "location"
     t.string "phone"
-    t.string "res_img"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "users_id"
-    t.bigint "reviews_id"
-    t.index ["reviews_id"], name: "index_restaurants_on_reviews_id"
-    t.index ["users_id"], name: "index_restaurants_on_users_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.string "comment"
     t.string "rating"
+    t.bigint "restaurant_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
     t.string "username"
     t.string "password_digest"
     t.string "bio"
     t.string "avatar"
-    t.string "favourite_cuisines"
+    t.string "favorite_cuisine"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "restaurants", "reviews", column: "reviews_id"
-  add_foreign_key "restaurants", "users", column: "users_id"
+  add_foreign_key "reviews", "restaurants"
+  add_foreign_key "reviews", "users"
 end
