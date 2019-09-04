@@ -12,12 +12,12 @@ Review.destroy_all
 #create 7 users
 
 User1 = User.create(username: 'Ruler', password: "password", bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'Jamaican', location: "password") 
-User2 = User.create(username: 'Deadshot',  password: "password", bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Cuban', location: "password") 
-User3 = User.create(username: 'Cooker', password: "password",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'Dutch', location: "password") 
-User4 = User.create(username: 'Kickass', password: "password",  bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Venezulan', location: "password")
-User5 = User.create(username: 'Queen', password: "password",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'French', location: "password") 
-User6 = User.create(username: 'Yoda', password: "password",  bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Malian', location: "password")
-User7 = User.create(username: 'BioChick', password: "password",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'Russian', location: "password")
+User2 = User.create(username: 'Deadshot',  password: "passwor", bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Cuban', location: "password") 
+User3 = User.create(username: 'Cooker', password: "passwo",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'Dutch', location: "password") 
+User4 = User.create(username: 'Kickass', password: "passw",  bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Venezulan', location: "password")
+User5 = User.create(username: 'Queen', password: "pass",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'French', location: "password") 
+User6 = User.create(username: 'Yoda', password: "pas",  bio: 'blah', avatar:'https://tinyurl.com/yyy9lmye', favorite_cuisine:'Malian', location: "password")
+User7 = User.create(username: 'BioChick', password: "p",  bio: 'blah', avatar:'https://tinyurl.com/y4jv4xrg', favorite_cuisine:'Russian', location: "password")
 
 #create 7 restaurants
 Restaurant1 = Restaurant.create(name: "Food", location: "Sand Town", phone: "4041234567", avatar: "https://tinyurl.com/y5h9dzof")
