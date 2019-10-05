@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+- [ ] Add to final Portfolio.
+- [ ] Rewrite clear User Stories.
+- [ ] Rebuild it with from the ground up.
+- [ ] Connect all the media.
+- [ ] Complete better ReadMe.
+- [ ] Host on Netlify/ Heroku
